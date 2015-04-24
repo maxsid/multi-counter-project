@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Android/AndroidStudioProjects/MultiCounter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-es/values.xml -->
+    <eat-comment/>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ir a la pantalla de inicio"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Desplazarse hacia arriba"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Más opciones"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Listo"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Ver todo"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Seleccionar una aplicación"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Borrar consulta"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Consulta"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Buscar"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Búsqueda por voz"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartir con"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartir con %s"</string>
+    <!-- From: file:/D:/Android/AndroidStudioProjects/MultiCounter/app/src/main/res/values-es/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Los ajustes</string>
+    <string name="add">Añadir</string>
+    <string name="all_counters_equal_zero">Todos los contadores y los botones serán iguales al cero</string>
+    <string name="app_name">Multi Counter</string>
+    <string name="apply">Aceptar</string>
+    <string name="bg_color">El color del fondo</string>
+    <string name="but_color_for_all">El color para creado</string>
+    <string name="but_color_for_all_desc">El color de los botones para todos los botones creados</string>
+    <string name="button_color">El color del botón</string>
+    <string name="buttons_color">El color de los botones</string>
+    <string name="cancel_last_click">Anular el último capirotazo</string>
+    <string name="cancel_paste">Anular la inserción</string>
+    <string name="change">Cambiar</string>
+    <string name="clear_database">Limpiar la base</string>
+    <string name="color">El color</string>
+    <string name="copy_button">Copiar el botón</string>
+    <string name="counter_color">El color del botón</string>
+    <string name="counter_n">El botón %d</string>
+    <string name="counter_name">El nombre del botón</string>
+    <string name="counter_value">El significado</string>
+    <string name="data">Los datos</string>
+    <string name="db_is_empty">¡La base es vacía!</string>
+    <string name="db_is_reseted">¡La base era arrojada ya!</string>
+    <string name="delete_all_counters">Quitar todo</string>
+    <string name="delete_dialog_question">¿Queréis quitar realmente el botón %s?</string>
+    <string name="deleted_counters">Es quitado %d de los botones/contadores</string>
+    <string name="dialog_delete">Quitar</string>
+    <string name="dialog_delete_all_counters">¿Queréis limpiar realmente la base? Todos los datos serán quitados.</string>
+    <string name="dialog_edit">Redactar</string>
+    <string name="dialog_reset_all_counters">¿Queréis arrojar realmente? Todos los botones se conservarán, pero sus cuentas serán hechas iguales a cero.</string>
+    <string name="display_clicks">Clicks</string>
+    <string name="display_clicks_and_value">El Clicks(El significado)</string>
+    <string name="display_value">El significado</string>
+    <string name="display_value_and_clicks">El significado(Clicks)</string>
+    <string name="display_value_and_limit">El significado/Límite</string>
+    <string name="divide">Hacer por el contador</string>
+    <string name="dont_zero">No puede ser el cero!</string>
+    <string name="exit_question">¿Queréis cerrar la aplicación?</string>
+    <string name="incorrect_number">¡El número es introducido incorrectamente!</string>
+    <string name="main">Principal</string>
+    <string name="maximum_and_minimum_label">Límite(Máximo/Mínimo)</string>
+    <string name="merge">Transformar en el botón</string>
+    <string name="merge_warning">¿Queréis transformar realmente en el botón? Todos los botones serán perdidos.</string>
+    <string name="move_button">Trasladar el botón</string>
+    <string name="no">No</string>
+    <string name="operation">La operación</string>
+    <string name="operation_and_step">La operación y el paso</string>
+    <string name="paste_button_after">Poner después de</string>
+    <string name="paste_button_before">Poner ante</string>
+    <string name="random_colors_button">El color constante de los botones</string>
+    <string name="random_colors_button_desc">Los colores por reticencia a la creación del botón</string>
+    <string name="reset_all_counters">Arrojar todo</string>
+    <string name="settings">Los ajustes</string>
+    <string name="settings_background_color">El color del fondo</string>
+    <string name="settings_category_sizes">Las dimensiones</string>
+    <string name="settings_category_sounds_and_vibration">Los sonidos y la vibración</string>
+    <string name="settings_default_color_title">El color constante del fondo</string>
+    <string name="settings_text_color">El color del texto</string>
+    <string name="settings_vibration">La vibración</string>
+    <string name="settings_vibration_warning">Puede ser desconectado en los ajustes de teléfono</string>
+    <string name="show_on_buttons">Mostrar sobre el botón</string>
+    <string name="slider_title">La dimensión mínima de los botones</string>
+    <string name="slider_title_set_height">Altura mínima</string>
+    <string name="slider_title_set_width">Anchura mínima</string>
+    <string name="step">El paso</string>
+    <string name="text_color">El color del texto</string>
+    <string name="this_is_max_values">Este significado máximo</string>
+    <string name="title_activity_add_counter">La adición del botón</string>
+    <string name="to_block">Bloquear</string>
+    <string name="to_unblock">Desbloquear</string>
+    <string name="value_is_big">El significado es más grande que el máximo</string>
+    <string name="value_is_small">El significado es más pequeño que el mínimo</string>
+    <string name="yes">Sí</string>
+</resources>

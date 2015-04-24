@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">Multi Counter</string>
+    <string name="action_settings">Options</string>
+    <string name="settings">Options</string>
+    <string name="dialog_edit">To edit</string>
+    <string name="dialog_delete">To remove</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="title_activity_add_counter">Button addition</string>
+    <string name="counter_name">Button name</string>
+    <string name="counter_value">Value</string>
+    <string name="counter_color">Colour of the button</string>
+    <string name="text_color">Colour of the text</string>
+    <string name="add">To add</string>
+    <string name="delete_dialog_question">You really want to remove the button %s?</string>
+    <string name="change">To change</string>
+    <string name="apply">To accept</string>
+    <string name="counter_n">The button %d</string>
+    <string name="clear_database">To clear base</string>
+    <string name="deleted_counters">It is removed %d buttons/counters</string>
+    <string name="this_is_max_values">This maximum value</string>
+    <string name="zero" translatable="false">0</string>
+    <string name="one" translatable="false">1</string>
+    <string name="divide">To make the counter</string>
+    <string name="exit_question">Want to close the appendix?</string>
+    <string name="main">The main</string>
+    <string name="delete_all_counters">To remove all</string>
+    <string name="reset_all_counters">To dump all</string>
+    <string name="all_counters_equal_zero">All counters and buttons will be equal to zero</string>
+    <string name="dialog_delete_all_counters">You really want to clear base? All data will be removed.</string>
+    <string name="dialog_reset_all_counters">You really want to dump? All buttons will remain, but their accounts will be nulled.</string>
+    <string name="db_is_empty">The base is empty!</string>
+    <string name="db_is_reseted">The base has already been dumped!</string>
+    <string name="merge">To transform to the button</string>
+    <string name="merge_warning">You really want to transform to the button? All buttons will be lost.</string>
+    <string name="data">Data</string>
+    <string name="color">Colour</string>
+    <string name="bg_color">Colour of a background</string>
+    <string name="buttons_color">Colour of buttons</string>
+    <string name="settings_default_color_title">Constant colour of a background</string>
+    <string name="settings_background_color">Colour of a background</string>
+    <string name="settings_text_color">Colour of the text</string>
+    <string name="random_colors_button">Constant colour of buttons</string>
+    <string name="random_colors_button_desc">Colours by default at button creation</string>
+    <string name="button_color">Colour of the button</string>
+    <string name="step">Step</string>
+    <string name="operation">Operation</string>
+    <string name="operation_and_step">Operation and step</string>
+    <string name="but_color_for_all">Colour for the created</string>
+    <string name="but_color_for_all_desc">Colour of buttons for all created buttons</string>
+    <string name="slider_title">The minimum size of buttons</string>
+    <string name="dont_zero">Canont be zero!</string>
+    <string name="slider_title_set_height">Minimum height</string>
+    <string name="slider_title_set_width">Minimum width</string>
+    <string name="move_button">Move the button</string>
+    <string name="paste_button_after">Insert after</string>
+    <string name="paste_button_before">Insert before</string>
+    <string name="copy_button">Сopy the button</string>
+    <string name="cancel_paste">Cancel an insert</string>
+    <string name="to_block">To block</string>
+    <string name="to_unblock">To unblock</string>
+    <string name="settings_category_sizes">Sizes</string>
+    <string name="settings_category_sounds_and_vibration">Sounds and vibration</string>
+    <string name="settings_vibration">Vibration</string>
+    <string name="settings_vibration_warning">Can be switched off in phone options</string>
+    <string name="strike_text" translatable="false"><strike>%s</strike></string>
+    <string name="bold_text" translatable="false"><b>%s</b></string>
+    <string name="underlined_text" translatable="false"><u>%s</u></string>
+    <string name="bold_and_underlined_text" translatable="false"><b><u>%s</u></b></string>
+    <string name="maximum_and_minimum_label">Limit (Maximum/Minimum)</string>
+    <string name="value_is_big">Value is more than maximum</string>
+    <string name="value_is_small">Value is less than minimum</string>
+    <string name="show_on_buttons">To show on the button</string>
+    <string name="display_clicks">clicks</string>
+    <string name="display_value_and_limit">value/limit</string>
+    <string-array name="operations_list" translatable="false">
+        <item>+</item>
+        <item>-</item>
+    </string-array>
+    <string-array name="display_value_list">
+        <item>@string/display_value</item>
+        <item>@string/display_clicks</item>
+        <item>@string/display_value_and_limit</item>
+        <item>@string/display_value_and_clicks</item>
+        <item>@string/display_clicks_and_value</item>
+    </string-array>
+    <string name="display_value">value</string>
+    <string name="display_value_and_clicks">value (clicks)</string>
+    <string name="display_clicks_and_value">clicks(value)</string>
+    <string name="cancel_last_click">To cancel last click</string>
+    <string name="incorrect_number">The number is entered incorrectly!</string>
+</resources>

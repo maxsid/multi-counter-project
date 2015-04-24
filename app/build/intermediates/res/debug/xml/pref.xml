@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:key="category_sounds_and_vibration">
+        <CheckBoxPreference
+            android:key="checkbox_vibration"
+            android:title="@string/settings_vibration" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_category_sizes">
+        <net.jayschwa.android.preference.SliderPreference
+            android:key="sliderButtonWidth"
+            android:title="@string/slider_title_set_width" />
+        <net.jayschwa.android.preference.SliderPreference
+            android:key="sliderButtonHeight"
+            android:title="@string/slider_title_set_height" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="category_bg_colors"
+        android:title="@string/bg_color">
+        <CheckBoxPreference
+            android:key="checkbox_default_bg_color"
+            android:title="@string/settings_default_color_title" />
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
+            android:defaultValue="0xffffffff"
+            android:key="change_default_background_color"
+            android:title="@string/settings_background_color"
+            app:supportsAlpha="false" />
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
+            android:defaultValue="0xff000000"
+            android:key="change_default_text_color"
+            android:title="@string/settings_text_color"
+            app:supportsAlpha="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="category_button_colors"
+        android:title="@string/buttons_color">
+        <CheckBoxPreference
+            android:key="checkbox_default_but_color"
+            android:title="@string/random_colors_button"
+            android:summary="@string/random_colors_button_desc" />
+        <CheckBoxPreference
+            android:key="checkbox_but_color_for_all_buttons"
+            android:title="@string/but_color_for_all"
+            android:summary="@string/but_color_for_all_desc" />
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
+            android:defaultValue="0xffffffff"
+            android:key="change_default_button_color"
+            android:title="@string/button_color"
+            app:supportsAlpha="false" />
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
+            android:defaultValue="0xff000000"
+            android:key="change_default_button_text_color"
+            android:title="@string/settings_text_color"
+            app:supportsAlpha="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="data_category"
+        android:title="@string/data">
+        <Preference
+            android:key="clear_database"
+            android:summary="@string/delete_all_counters"
+            android:title="@string/clear_database" />
+        <Preference
+            android:key="reset_counters"
+            android:summary="@string/all_counters_equal_zero"
+            android:title="@string/reset_all_counters" />
+    </PreferenceCategory>
+</PreferenceScreen><!-- From: file:/D:/Android/AndroidStudioProjects/MultiCounter/app/src/main/res/xml/pref.xml -->

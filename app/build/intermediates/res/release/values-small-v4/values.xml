@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Android/AndroidStudioProjects/MultiCounter/app/src/main/res/values-small/dimens.xml -->
+    <eat-comment/>
+    <integer name="minimal_button_width">95</integer>
+</resources>

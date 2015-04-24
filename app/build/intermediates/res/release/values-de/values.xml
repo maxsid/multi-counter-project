@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Android/AndroidStudioProjects/MultiCounter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-de/values.xml -->
+    <eat-comment/>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Zur Startseite"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s: %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s: %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Nach oben"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Weitere Optionen"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Fertig"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Alle ansehen"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"App auswählen"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Suchanfrage löschen"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Suchanfrage"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Suchen"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Suchanfrage senden"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Sprachsuche"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Freigeben für"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Freigeben für %s"</string>
+    <!-- From: file:/D:/Android/AndroidStudioProjects/MultiCounter/app/src/main/res/values-de/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Einstellungen</string>
+    <string name="add">Zu ergänzen</string>
+    <string name="all_counters_equal_zero">Alle Zähler und die Schaltflächen werden der Null gleich sein</string>
+    <string name="app_name">Multi Counter</string>
+    <string name="apply">Zu übernehmen</string>
+    <string name="bg_color">Die Hintergrundfarbe</string>
+    <string name="but_color_for_all">Die Farbe für die Erstellten</string>
+    <string name="but_color_for_all_desc">Die Farbe der Schaltflächen für alle erstellten Schaltflächen</string>
+    <string name="button_color">Die Farbe der Schaltfläche</string>
+    <string name="buttons_color">Die Farbe der Schaltflächen</string>
+    <string name="cancel_last_click">Den letzten Nasenstüber aufzuheben</string>
+    <string name="cancel_paste">Den Einschub aufzuheben</string>
+    <string name="change">Ändern</string>
+    <string name="clear_database">Die Basis zu reinigen</string>
+    <string name="color">Die Farbe</string>
+    <string name="copy_button">Den Knopf zu kopieren</string>
+    <string name="counter_color">Die Farbe der Schaltfläche</string>
+    <string name="counter_n">Die Schaltfläche %d</string>
+    <string name="counter_name">Der Name der Schaltfläche</string>
+    <string name="counter_value">Die Bedeutung</string>
+    <string name="data">Die Daten</string>
+    <string name="db_is_empty">Die Basis ist leer!</string>
+    <string name="db_is_reseted">Die Basis war schon gestürzt!</string>
+    <string name="delete_all_counters">Allen zu löschen</string>
+    <string name="delete_dialog_question">Ihr wollt die Schaltfläche %s wirklich löschen?</string>
+    <string name="deleted_counters">Es ist %d der Schaltflächen/Zähler gelöscht</string>
+    <string name="dialog_delete">Zu löschen</string>
+    <string name="dialog_delete_all_counters">Ihr wollt die Basis wirklich reinigen? Alle Daten werden gelöscht sein.</string>
+    <string name="dialog_edit">Bearbeiten</string>
+    <string name="dialog_reset_all_counters">Ihr wollt wirklich stürzen? Alle Schaltflächen werden gespeichert werden, aber ihre Rechnungen werden обнулены.</string>
+    <string name="display_clicks">Clicks</string>
+    <string name="display_clicks_and_value">Die Clicks(Die Bedeutung)</string>
+    <string name="display_value">Die Bedeutung</string>
+    <string name="display_value_and_clicks">Die Bedeutung (Clicks)</string>
+    <string name="display_value_and_limit">Die Bedeutung/Limit</string>
+    <string name="divide">Den Zähler zu machen</string>
+    <string name="dont_zero">Kann keine Null sein!</string>
+    <string name="exit_question">Sie wollen die Anwendung schließen?</string>
+    <string name="incorrect_number">Die Zahl ist falsch eingeführt!</string>
+    <string name="main">Der Wesentliche</string>
+    <string name="maximum_and_minimum_label">Limit (Maximum/Mindestens)</string>
+    <string name="merge">In die Schaltfläche umzuwandeln</string>
+    <string name="merge_warning">Ihr wollt in die Schaltfläche wirklich umwandeln? Alle Schaltflächen werden verloren sein.</string>
+    <string name="move_button">Den Knopf zu versetzen</string>
+    <string name="no">Nein</string>
+    <string name="operation">Die Operation</string>
+    <string name="operation_and_step">Die Operation und der Schritt</string>
+    <string name="paste_button_after">Nach einzustellen</string>
+    <string name="paste_button_before">Vor einzustellen</string>
+    <string name="random_colors_button">Die zufällige Farbe der Schaltflächen</string>
+    <string name="random_colors_button_desc">Die Farben als Voreinstellung bei der Bildung der Schaltfläche</string>
+    <string name="reset_all_counters">Allen zu stürzen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="settings_background_color">Die Hintergrundfarbe</string>
+    <string name="settings_category_sizes">Die Umfänge</string>
+    <string name="settings_category_sounds_and_vibration">Die Laute und die Vibration</string>
+    <string name="settings_default_color_title">Die ständige Hintergrundfarbe</string>
+    <string name="settings_text_color">Die Farbe des Textes</string>
+    <string name="settings_vibration">Die Vibration</string>
+    <string name="settings_vibration_warning">Kann in den Anpassungen des Telefons ausgeschaltet sein</string>
+    <string name="show_on_buttons">Auf dem Knopf vorzuführen</string>
+    <string name="slider_title">Der minimale Umfang der Schaltflächen</string>
+    <string name="slider_title_set_height">Minimale Höhe</string>
+    <string name="slider_title_set_width">Minimale Breite</string>
+    <string name="step">Der Schritt</string>
+    <string name="text_color">Die Farbe des Textes</string>
+    <string name="this_is_max_values">Dieser maximale Wert</string>
+    <string name="title_activity_add_counter">Die Ergänzung der Schaltfläche</string>
+    <string name="to_block">Auszusondern</string>
+    <string name="to_unblock">Loszulösen</string>
+    <string name="value_is_big">Die Bedeutung ist mehr als Maximum</string>
+    <string name="value_is_small">Die Bedeutung ist weniger Minimum</string>
+    <string name="yes">Ja</string>
+</resources>

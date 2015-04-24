@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="D:\Android\AndroidStudioProjects\MultiCounter\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-aa16b3cf885393ef74ba8407c65bcf20627dd05b.jar" />
+    </item>
+    <item
+        jar="D:\Android\AndroidStudioProjects\MultiCounter\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="D:\Android\AndroidStudioProjects\MultiCounter\app\build\intermediates\pre-dexed\debug\classes-23722f0bf94450754e9cc1e5d246a6067cfbafe5.jar" />
+    </item>
+    <item
+        jar="D:\Android\AndroidStudioProjects\MultiCounter\app\libs\StartAppInApp-2.4.15.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8dcfec7b54d8b0f349a09f3758e536f3b8c08c2b">
+        <dex dex="D:\Android\AndroidStudioProjects\MultiCounter\app\build\intermediates\pre-dexed\debug\StartAppInApp-2.4.15-bf6226957bfab377e1d9aeca0282043e5eb0e871.jar" />
+    </item>
+    <item
+        jar="D:\Android\AndroidStudioProjects\MultiCounter\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="D:\Android\AndroidStudioProjects\MultiCounter\app\build\intermediates\pre-dexed\debug\classes-b1a69c8d5d3e9eec9bf37fbb2d33985cb9291b39.jar" />
+    </item>
+    <item
+        jar="D:\Android\AndroidStudioProjects\MultiCounter\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="D:\Android\AndroidStudioProjects\MultiCounter\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-e3afd9defed59ef3f1aeb0c8e25a476076fbdacd.jar" />
+    </item>
+
+</items>

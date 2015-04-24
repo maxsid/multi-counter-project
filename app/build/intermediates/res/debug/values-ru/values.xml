@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Android/AndroidStudioProjects/MultiCounter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-ru/values.xml -->
+    <eat-comment/>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Перейти на главный экран"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Перейти вверх"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Другие параметры"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Показать все"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Выбрать приложение"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Удалить запрос"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Поисковый запрос"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Поиск"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Отправить запрос"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Голосовой поиск"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Открыть доступ"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Открыть доступ пользователю %s"</string>
+    <!-- From: file:/D:/Android/AndroidStudioProjects/MultiCounter/app/src/main/res/values-ru/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Настройки</string>
+    <string name="add">Добавить</string>
+    <string name="all_counters_equal_zero">Все счетчики и кнопки будут равны нулю</string>
+    <string name="app_name">Multi Counter</string>
+    <string name="apply">Принять</string>
+    <string name="bg_color">Цвет фона</string>
+    <string name="but_color_for_all">Цвет для созданных</string>
+    <string name="but_color_for_all_desc">Цвет кнопок для всех созданных кнопок</string>
+    <string name="button_color">Цвет кнопки</string>
+    <string name="buttons_color">Цвет кнопок</string>
+    <string name="cancel_last_click">Отменить последний клик</string>
+    <string name="cancel_paste">Отменить вставку</string>
+    <string name="change">Изменить</string>
+    <string name="clear_database">Очистить базу</string>
+    <string name="color">Цвет</string>
+    <string name="copy_button">Копировать кнопку</string>
+    <string name="counter_color">Цвет кнопки</string>
+    <string name="counter_n">Кнопка %d</string>
+    <string name="counter_name">Имя кнопки</string>
+    <string name="counter_value">Значение</string>
+    <string name="data">Данные</string>
+    <string name="db_is_empty">База пуста!</string>
+    <string name="db_is_reseted">База уже была сброшена!</string>
+    <string name="delete_all_counters">Удалить все</string>
+    <string name="delete_dialog_question">Вы действительно хотите удалить кнопку %s?</string>
+    <string name="deleted_counters">Удалено %d кнопок/счетчиков</string>
+    <string name="dialog_delete">Удалить</string>
+    <string name="dialog_delete_all_counters">Вы действительно хотите очистить базу? Все данные будут удалены.</string>
+    <string name="dialog_edit">Редактировать</string>
+    <string name="dialog_reset_all_counters">Вы действительно хотите сбросить? Все кнопки сохранятся, но их счета будут обнулены.</string>
+    <string name="display_clicks">клики</string>
+    <string name="display_clicks_and_value">клики(значение)</string>
+    <string name="display_value">значение</string>
+    <string name="display_value_and_clicks">значение(клики)</string>
+    <string name="display_value_and_limit">значение/лимит</string>
+    <string name="divide">Сделать счетчиком</string>
+    <string name="dont_zero">Не может быть нулем!</string>
+    <string name="exit_question">Хотите закрыть приложение?</string>
+    <string name="incorrect_number">Число введено неверно!</string>
+    <string name="main">Главный</string>
+    <string name="maximum_and_minimum_label">Лимит (Максимум/Минимум)</string>
+    <string name="merge">Преобразовать в кнопку</string>
+    <string name="merge_warning">Вы действительно хотите преобразовать в кнопку? Все кнопки будут потеряны.</string>
+    <string name="move_button">Переместить кнопку</string>
+    <string name="no">Нет</string>
+    <string name="operation">Операция</string>
+    <string name="operation_and_step">Операция и шаг</string>
+    <string name="paste_button_after">Вставить после</string>
+    <string name="paste_button_before">Вставить перед</string>
+    <string name="random_colors_button">Постоянный цвет кнопок</string>
+    <string name="random_colors_button_desc">Цвета по умолчанию при создании кнопки</string>
+    <string name="reset_all_counters">Сбросить все</string>
+    <string name="settings">Настройки</string>
+    <string name="settings_background_color">Цвет фона</string>
+    <string name="settings_category_sizes">Размеры</string>
+    <string name="settings_category_sounds_and_vibration">Звуки и вибрация</string>
+    <string name="settings_default_color_title">Постоянный цвет фона</string>
+    <string name="settings_text_color">Цвет текста</string>
+    <string name="settings_vibration">Вибрация</string>
+    <string name="settings_vibration_warning">Может быть выключена в настройках телефона</string>
+    <string name="show_on_buttons">Показывать на кнопке</string>
+    <string name="slider_title">Минимальный размер кнопок</string>
+    <string name="slider_title_set_height">Минимальная высота</string>
+    <string name="slider_title_set_width">Минимальная ширина</string>
+    <string name="step">Шаг</string>
+    <string name="text_color">Цвет текста</string>
+    <string name="this_is_max_values">Это максимальное значение</string>
+    <string name="title_activity_add_counter">Добавление кнопки</string>
+    <string name="to_block">Заблокировать</string>
+    <string name="to_unblock">Разблокировать</string>
+    <string name="value_is_big">Значение больше максимума</string>
+    <string name="value_is_small">Значение меньше минимума</string>
+    <string name="yes">Да</string>
+</resources>
