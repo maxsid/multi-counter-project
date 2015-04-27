@@ -137,6 +137,7 @@ public class CountersAdapter extends BaseAdapter implements View.OnClickListener
                 if (Globals.pref.getBoolean(Globals.SETTING_KEY_CB_VIBRATION, true))
                     v.performHapticFeedback(HapticFeedbackConstants.LONG_PRESS);
                 v.startAnimation(main.clickAnim);
+                main.resetFirstClickBack();
             }
         } else {
             main.changeActivity(Globals.counter.getId());
@@ -277,13 +278,8 @@ public class CountersAdapter extends BaseAdapter implements View.OnClickListener
         int numRows = (getCount() % (numColumn + 0.0)) == 0 ? getCount() / numColumn : (getCount() / numColumn) + 1;
         height = main.gridView.getHeight() / (numRows + 0.0f);
         height = height < minHeight ? minHeight : height;
-        /*if (main.getAlbumRotateOrientation()) {
-            butWidth = (int) height;
-            butHeight = (int) width;
-        } else {*/
             butWidth = (int) width;
             butHeight = (int) height;
-        //}
         main.gridView.setNumColumns(numColumn);
     }
 }

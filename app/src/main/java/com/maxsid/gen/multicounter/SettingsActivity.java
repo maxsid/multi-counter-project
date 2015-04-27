@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.preference.CheckBoxPreference;
@@ -57,7 +58,6 @@ public class SettingsActivity extends PreferenceActivity implements Preference.O
         soundsAndVibrationCategory = (PreferenceCategory) findPreference(Globals.SETTING_CATEGORY_SOUNDS_AND_VIBRATION);
         cbVibration = ((CheckBoxPreference) findPreference(Globals.SETTING_KEY_CB_VIBRATION));
         cbVibration.setChecked(Globals.pref.getBoolean(Globals.SETTING_KEY_CB_VIBRATION, true));
-
         setVisibleColorsChanges();
     }
 
@@ -135,6 +135,7 @@ public class SettingsActivity extends PreferenceActivity implements Preference.O
             if (which == Dialog.BUTTON_POSITIVE) {
                 Globals.db.clearDatabase();
                 dbCleared = true;
+
             }
         }
     };
@@ -148,4 +149,9 @@ public class SettingsActivity extends PreferenceActivity implements Preference.O
             }
         }
     };
+
+    public void onBackPressed() {
+        setResult(RESULT_OK, new Intent());
+        finish();
+    }
 }

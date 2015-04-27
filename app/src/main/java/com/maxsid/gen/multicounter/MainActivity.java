@@ -12,7 +12,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.Surface;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.view.animation.Animation;
@@ -20,6 +19,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.GridView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.startapp.android.publish.StartAppAd;
 import com.startapp.android.publish.StartAppSDK;
@@ -36,6 +36,7 @@ public class MainActivity extends ActionBarActivity {
     public Animation clickAnim;
     private long movingCounterId = -1;
     private boolean copyCounter = false;
+    private boolean backPressed = false;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,13 +100,12 @@ public class MainActivity extends ActionBarActivity {
             case R.id.action_settings:
                 Intent intent = new Intent(this, SettingsActivity.class);
                 overridePendingTransition(R.anim.slide_right_in, R.anim.slide_right_out);
-                startActivity(intent);
+                startActivityForResult(intent, Globals.SETTINGS_ACTIVITY);
                 break;
         }
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode != RESULT_OK) return;
@@ -117,6 +117,9 @@ public class MainActivity extends ActionBarActivity {
             case Globals.EDIT_COUNTER_ACTIVITY:
                 adapter.editGlobalCounter();
                 changeOwner(Globals.counter.getOwner());
+                break;
+            case Globals.SETTINGS_ACTIVITY:
+                changeOwner(owner);
                 break;
         }
         refreshGVData();
@@ -168,11 +171,6 @@ public class MainActivity extends ActionBarActivity {
                         Globals.counter.getName()));
                 ad.setPositiveButton(R.string.yes, deleteItemDialogClickListener);
                 ad.setNegativeButton(R.string.no, deleteItemDialogClickListener);
-                break;
-            case Globals.DIALOG_EXIT:
-                ad.setMessage(getString(R.string.exit_question));
-                ad.setPositiveButton(R.string.yes, exitProgrammDialogClickListener);
-                ad.setNegativeButton(R.string.no, exitProgrammDialogClickListener);
                 break;
             case Globals.DIALOG_MERGE_WARNING:
                 ad.setMessage(getString(R.string.merge_warning));
@@ -332,29 +330,27 @@ public class MainActivity extends ActionBarActivity {
         }
     };
 
-    @Override
     public void onBackPressed() {
         if (owner == 0) {
-            showDialog(Globals.DIALOG_EXIT);
+            if (backPressed)
+                finish();
+            else {
+                Toast.makeText(this, getString(R.string.press_again_for_exit), Toast.LENGTH_LONG).show();
+                backPressed = true;
+            }
         } else {
             changeActivity(db.getCounterOnId(owner).getOwner());
         }
     }
 
-    Dialog.OnClickListener exitProgrammDialogClickListener = new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface dialog, int which) {
-            switch (which) {
-                case Dialog.BUTTON_POSITIVE:
-                    finish();
-            }
-        }
-    };
+    public void resetFirstClickBack() {
+        backPressed = false;
+    }
 
     public void refreshGVData() {
         gridView.setAdapter(adapter);
         adapter.refreshSumCounters();
-
+        resetFirstClickBack();
     }
 
 
@@ -380,18 +376,6 @@ public class MainActivity extends ActionBarActivity {
         adapter = new CountersAdapter(this);
         adapter.refreshSumCounters();
         adapter.refreshCounters();
-    }
-
-    public void changeOwner(Counter newOwner) {
-        newAdapter(newOwner.getId());
-        changeColors(newOwner.getBgColor(), newOwner.getTextColor());
-        refreshGVData();
-
-        if (newOwner.getId() != 0)
-            this.setTitle(newOwner.getName());
-        else
-            this.setTitle(R.string.main);
-
     }
 
     public void changeOwner(long newOwner) {
@@ -452,16 +436,5 @@ public class MainActivity extends ActionBarActivity {
         overridePendingTransition(R.anim.abc_slide_in_bottom, R.anim.abc_slide_out_bottom);
         startActivity(intent);
         this.finish();
-    }
-
-    public boolean getAlbumRotateOrientation() {
-        int rotate = getWindowManager().getDefaultDisplay().getRotation();
-        switch (rotate) {
-            case Surface.ROTATION_0 | Surface.ROTATION_180:
-                return false;
-            case Surface.ROTATION_90 | Surface.ROTATION_270:
-                return true;
-        }
-        return false;
     }
 }

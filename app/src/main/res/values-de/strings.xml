@@ -73,4 +73,5 @@
     <string name="display_clicks_and_value">Die Clicks(Die Bedeutung)</string>
     <string name="cancel_last_click">Den letzten Nasenstüber aufzuheben</string>
     <string name="incorrect_number">Die Zahl ist falsch eingeführt!</string>
+    <string name="press_again_for_exit">Drücken Sie noch einmal für den Ausgang</string>
 </resources>

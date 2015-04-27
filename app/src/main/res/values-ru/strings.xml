@@ -74,4 +74,5 @@
     <string name="display_clicks_and_value">клики(значение)</string>
     <string name="cancel_last_click">Отменить последний клик</string>
     <string name="incorrect_number">Число введено неверно!</string>
+    <string name="press_again_for_exit">Нажмите еще раз для выхода</string>
 </resources>

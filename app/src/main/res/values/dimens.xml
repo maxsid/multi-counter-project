@@ -13,7 +13,7 @@
     <dimen name="minimal_button_size_height">40dp</dimen>
     <dimen name="maximal_button_size_width">500dp</dimen>
     <dimen name="maximal_button_size_height">500dp</dimen>
-    <integer name="minimal_button_height">40</integer>
+    <integer name="minimal_button_height">70</integer>
     <integer name="minimal_button_width">145</integer>
     <integer name="min_count_text_size">20</integer>
     <integer name="max_count_text_size">200</integer>

@@ -19,13 +19,13 @@ public class Globals {
 
     public static final int DIALOG_ITEM = 1;
     public static final int DIALOG_DELETE_ITEM = 2;
-    public static final int DIALOG_EXIT = 3;
     public static final int DIALOG_CLEAR_DATABASE = 4;
     public static final int DIALOG_RESET_ALL_COUNTERS = 5;
     public static final int DIALOG_MERGE_WARNING = 6;
 
     public static final int ADD_COUNTER_ACTIVITY = 1;
     public static final int EDIT_COUNTER_ACTIVITY = 2;
+    public static final int SETTINGS_ACTIVITY = 3;
 
     public static final String SETTING_KEY_CLEAR_DATABASE = "clear_database";
     public static final String SETTING_KEY_RESET_COUNTERS = "reset_counters";
@@ -52,14 +52,6 @@ public class Globals {
 
     public static final String startAppAppID = "203112180";
     public static final String startAppdevID = "103184881";
-
-    static void logDebug(String message) {
-        Log.d(LOG_TAG, message);
-    }
-
-    static void logError(String message) {
-        Log.e(LOG_TAG, message);
-    }
 
     static void logInfo(String message) {
         Log.i(LOG_TAG, message);

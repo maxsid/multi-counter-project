@@ -90,4 +90,5 @@
     <string name="display_clicks_and_value">clicks(value)</string>
     <string name="cancel_last_click">To cancel last click</string>
     <string name="incorrect_number">The number is entered incorrectly!</string>
+    <string name="press_again_for_exit">Press once again for an exit</string>
 </resources>

@@ -73,4 +73,5 @@
     <string name="display_clicks_and_value">El Clicks(El significado)</string>
     <string name="cancel_last_click">Anular el último capirotazo</string>
     <string name="incorrect_number">¡El número es introducido incorrectamente!</string>
+    <string name="press_again_for_exit">Presionen una vez más para la salida</string>
 </resources>

@@ -1,11 +1,13 @@
 package com.maxsid.gen.multicounter;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -50,8 +52,10 @@ public class AddCounterActivity extends ActionBarActivity
         //Конец рекламы
         butBgColor = ((Button) findViewById(R.id.bSelectColor));
         butBgColor.setOnClickListener(this);
+        butBgColor.setOnCreateContextMenuListener(onCreateCtxMenuGenerateColors);
         butTextColor = ((Button) findViewById(R.id.bSelectTextColor));
         butTextColor.setOnClickListener(this);
+        butTextColor.setOnCreateContextMenuListener(onCreateCtxMenuGenerateColors);
         butApply = ((Button) findViewById(R.id.bAddCounter));
         butApply.setOnClickListener(this);
 
@@ -75,6 +79,13 @@ public class AddCounterActivity extends ActionBarActivity
     CompoundButton.OnCheckedChangeListener onCheckedMaxAndMinOnOff = new CompoundButton.OnCheckedChangeListener() {
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             etLimit.setEnabled(isChecked);
+        }
+    };
+
+    View.OnCreateContextMenuListener onCreateCtxMenuGenerateColors = new View.OnCreateContextMenuListener() {
+        public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+            int intColor = generateBGColor();
+            setDefaultColors(intColor, setColorButTextColor(intColor));
         }
     };
 
@@ -102,6 +113,7 @@ public class AddCounterActivity extends ActionBarActivity
                         Log.d(Globals.LOG_TAG, "Color selected: " + color);
                         if (v.getId() == R.id.bSelectColor)
                             setColorButTextColor(color);
+
                         v.setBackgroundColor(color);
                     }
                 });
@@ -190,9 +202,26 @@ public class AddCounterActivity extends ActionBarActivity
     }
 
     public int setColorButTextColor(int color) {
-        int m = getResources().getInteger(R.integer.black) - 1;
-        Log.d(Globals.LOG_TAG, "Negative Color generated: " + (m - color));
-        return m - color;
+        //int m = getResources().getInteger(R.integer.black) - 1;
+        final byte H = 0, S = 1, V = 2;
+        float[] hsv = {0, 0, 0};        //Основной цвет
+        float[] hsvresult = {0, 0, 0}; //Дополняющий цвет
+        Color.RGBToHSV(Color.red(color), Color.green(color), Color.blue(color), hsv);
+        //Высчитываем доплняющий цвет
+        //H
+        if (hsv[H] >= 180)
+            hsvresult[H] = hsv[H] - 180;
+        else
+            hsvresult[H] = hsv[H] + 180;
+        //S
+        hsvresult[S] = (hsv[V] * hsv[S]) / (hsv[V] * (hsv[S] - 1) + 1);
+        //V
+        hsvresult[V] = hsv[V] * (hsv[S] - 1) + 1;
+
+        color = Color.HSVToColor(hsvresult);
+        Log.d(Globals.LOG_TAG, "Negative Color generated: " + color);
+        //return m - color;
+        return color;
     }
 
     private void fillFields() {
@@ -222,11 +251,15 @@ public class AddCounterActivity extends ActionBarActivity
             etLimit.setEnabled(!counter.isOwner());
         } else {
             etName.setHint(String.format(getResources().getString(R.string.counter_n), amountCounters + 1));
-            Random random = new Random();
-            int intColor = random.nextInt(16777216) - 16777217;
+            int intColor = generateBGColor();
             setDefaultColors(intColor, setColorButTextColor(intColor));
             etLimit.setEnabled(false);
         }
+    }
+
+    private int generateBGColor() {
+        Random random = new Random();
+        return random.nextInt(16777216) - 16777217;
     }
 
     private void setDefaultColors(int bgColor, int textColor) {
@@ -264,4 +297,5 @@ public class AddCounterActivity extends ActionBarActivity
     private int getDisplayValue() {
         return spinnerDisplayValue.getSelectedItemPosition();
     }
+
 }
